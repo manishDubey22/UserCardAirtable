@@ -1,0 +1,10 @@
+.sortingWrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.applyButton {
+  text-transform: capitalize;
+  height: fit-content;
+}

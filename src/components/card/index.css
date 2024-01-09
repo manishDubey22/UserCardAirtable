@@ -1,0 +1,73 @@
+section {
+  border: 5px solid #030303;
+  border-radius: 10px;
+  padding: 0.5rem;
+  background-color: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.card-header {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.card-name {
+  width: 86%;
+}
+
+.card-name h3,
+.card-name h5 {
+  margin: 0;
+}
+
+.card-name h5 {
+  color: darkgray;
+
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  width: 95%;
+}
+
+.card-body {
+  padding: 15px;
+  display: flex;
+  gap: 0.5rem;
+}
+
+.chart {
+  width: 70%;
+}
+.chart p {
+  color: #828282;
+  font-size: 12px;
+}
+
+.card-footer {
+  text-align: center;
+  font-size: 20px;
+  font-weight: bold;
+  color: #40b773;
+}
+
+.impressions,
+.conversions {
+  text-align: center;
+}
+
+.impressions strong {
+  color: #e88d3d;
+  font-size: 20px;
+}
+
+.conversions strong {
+  font-size: 20px;
+  color: #2d82ba;
+}
+
+.impressions p,
+.conversions p {
+  font-size: 12px;
+  color: #d7dbdd;
+}
