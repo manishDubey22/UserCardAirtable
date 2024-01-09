@@ -154,7 +154,7 @@ function App() {
         matchedDataSet?.length
           ? matchedDataSet?.map((user: any) => {
               return (
-                <div className="cards-container" key={user?.id}>
+                <div className="cards-container" key={user?.id} data-testid="card-component">
                   <Card {...user} />
                 </div>
               );

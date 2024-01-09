@@ -80,7 +80,7 @@ const SortingData = ({
   return (
     <div className="sortingWrapper">
       <div>
-        <FormControl sx={{ m: 1, minWidth: 120 }}>
+        <FormControl sx={{ m: 1, minWidth: 120 }} data-testid="sort-select-box">
           <InputLabel id="demo-simple-select-helper-label">Sort</InputLabel>
           <Select
             labelId="demo-simple-select-helper-label"
@@ -103,7 +103,10 @@ const SortingData = ({
         </FormControl>
 
         {sortField && (
-          <FormControl sx={{ m: 1, minWidth: 120 }}>
+          <FormControl
+            sx={{ m: 1, minWidth: 120 }}
+            data-testid="sort-direction-select-box"
+          >
             <Select
               defaultValue={sortDirection}
               value={sortDirection}
