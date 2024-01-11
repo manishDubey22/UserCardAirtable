@@ -43,6 +43,7 @@ header {
 
 main {
   display: flex;
+  justify-content: center;
   gap: 1rem;
   flex-wrap: wrap;
   background-color: #7f8c8d;
@@ -51,11 +52,30 @@ main {
 
 .cards-container {
   display: grid;
-  grid-template-columns: repeat(
-    auto-fit,
-    minmax(300px, 1fr)
-  );
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 20px;
   background-color: #7f8c8d;
   width: min-content;
+}
+
+.floating-arrow {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  cursor: pointer;
+}
+
+.floating-arrow a {
+  border: none;
+  background-color: transparent;
+}
+
+.floating-arrow a img {
+  width: 50px;
+  height: auto;
+  transition: transform 0.3s;
+}
+
+.floating-arrow a img:hover {
+  transform: translateY(-5px);
 }
